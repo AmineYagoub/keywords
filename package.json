@@ -1,0 +1,19 @@
+{
+  "name": "keywords-extract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmineYagoub/keywords-extract.git"
+  },
+  "author": "Amine Yagoub",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AmineYagoub/keywords-extract/issues"
+  },
+  "homepage": "https://github.com/AmineYagoub/keywords-extract#readme"
+}
