@@ -11,13 +11,13 @@ npm install keywords-extract --save
 ```
 
 ### CDN
-`https://unpkg.com/keywords-extract/dist/keywords-extract.umd.min.js`
+`https://unpkg.com/sw-extract@1.0.0/dist/sw-extract.umd.min.js`
 
 ### Usage with a bundler
 To use keywords-extract with Webpack, Parcel or other bundler
 
 ```js
-import Keywords from 'keywords-extract';
+import Keywords from 'sw-extract';
 
 const text = 'Your Text...'
 const options = {...}
@@ -26,7 +26,7 @@ const result = Keywords(text, options).toArray();
 
 ### Usage in Browser directly
 ```html
-<script src="https://unpkg.com/keywords-extract/dist/keywords-extract.umd.min.js"></script>
+<script src="https://unpkg.com/sw-extract@1.0.0/dist/sw-extract.umd.min.js"></script>
 <body>
   ...
 </body>
