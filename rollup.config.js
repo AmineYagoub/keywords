@@ -2,7 +2,7 @@ import resolve from '@rollup/plugin-node-resolve'
 import babel from '@rollup/plugin-babel'
 import { terser } from 'rollup-plugin-terser'
 
-const format = format => `dist/keyword-extract.${format}.min.js`
+const format = format => `dist/keywords-extract.${format}.min.js`
 export default {
   input: 'index.js',
   output: [
