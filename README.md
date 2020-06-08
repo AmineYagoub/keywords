@@ -1,7 +1,7 @@
 # keywords-extract 
 [![Build Status](https://travis-ci.com/AmineYagoub/keywords-extract.svg?branch=master)](https://travis-ci.com/AmineYagoub/keywords-extract)
 [![Coverage Status](https://coveralls.io/repos/github/AmineYagoub/keywords-extract/badge.svg?branch=master)](https://coveralls.io/github/AmineYagoub/keywords-extract?branch=master)
-> A simple javascript stopwords extractor with 0 dependencies.
+> A simple javascript stopwords extractor with 0 dependencies. [demo](https://amineyagoub.github.io/keywords-extract-demo/)
 # Installation
 
 ### NPM
@@ -14,7 +14,7 @@ npm install keywords-extract --save
 `https://unpkg.com/keywords-extract/dist/keywords-extract.umd.min.js`
 
 ### Usage with a bundler
-TO use keywords-extract with Webpack, Parcel or other bundler
+To use keywords-extract with Webpack, Parcel or other bundler
 
 ```js
 import Keywords from 'keywords-extract';
