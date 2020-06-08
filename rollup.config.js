@@ -12,7 +12,7 @@ export default {
       name: 'Keywords'
     },
     {
-      file: format('ems'),
+      file: format('esm'),
       format: 'esm'
     },
     {
