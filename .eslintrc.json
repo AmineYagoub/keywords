@@ -11,6 +11,8 @@
     "parserOptions": {
         "ecmaVersion": 11
     },
+    "parser": "babel-eslint",
     "rules": {
+        "no-misleading-character-class": 0
     }
 }

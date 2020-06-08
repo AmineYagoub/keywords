@@ -1,20 +1,22 @@
 import resolve from '@rollup/plugin-node-resolve'
 import babel from '@rollup/plugin-babel'
 import { terser } from 'rollup-plugin-terser'
+
+const format = format => `dist/keyword-extract.${format}.min.js`
 export default {
-  input: 'src/index.js',
+  input: 'index.js',
   output: [
     {
-      file: 'dist/bundle.umd.js',
+      file: format('umd'),
       format: 'umd',
       name: 'Keywords'
     },
     {
-      file: 'dist/bundle.esm.js',
+      file: format('ems'),
       format: 'esm'
     },
     {
-      file: 'dist/bundle.cjs.js',
+      file: format('cjs'),
       format: 'cjs'
     }
   ],

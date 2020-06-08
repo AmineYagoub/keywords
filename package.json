@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "test",
+    "test": "jest",
+    "coverage": "rimraf coverage && jest --coverage",
+    "coverall": "rimraf coverage && jest --coverage && coveralls < coverage/lcov.info",
     "lint": "eslint src/*.js",
-    "prebuild": "rimraf dist",
-    "build": "rollup -c"
+    "prebuild": "rimraf dist ",
+    "build": "rollup -c",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AmineYagoub/keywords-extract.git"
+    "url": "https://github.com/AmineYagoub/keywords-extract.git"
   },
   "author": "Amine Yagoub",
   "license": "MIT",
@@ -21,15 +25,19 @@
   "homepage": "https://github.com/AmineYagoub/keywords-extract#readme",
   "devDependencies": {
     "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
     "@babel/preset-env": "^7.10.2",
     "@rollup/plugin-babel": "^5.0.3",
     "@rollup/plugin-node-resolve": "^8.0.1",
+    "babel-eslint": "^10.1.0",
+    "coveralls": "^3.1.0",
     "eslint": "^7.2.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
+    "jest": "^26.0.1",
     "rimraf": "^3.0.2",
     "rollup": "^2.14.0",
     "rollup-plugin-node-resolve": "^5.2.0",
