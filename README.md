@@ -1,4 +1,4 @@
-# keywords-extract 
+# sw-extract 
 [![Build Status](https://travis-ci.com/AmineYagoub/keywords-extract.svg?branch=master)](https://travis-ci.com/AmineYagoub/keywords-extract)
 [![Coverage Status](https://coveralls.io/repos/github/AmineYagoub/keywords-extract/badge.svg?branch=master)](https://coveralls.io/github/AmineYagoub/keywords-extract?branch=master)
 > A simple javascript stopwords extractor with 0 dependencies. [demo](https://amineyagoub.github.io/keywords-extract-demo/)
@@ -7,14 +7,14 @@
 ### NPM
 
 ```bash
-npm install keywords-extract --save
+npm install sw-extract --save
 ```
 
 ### CDN
 `https://unpkg.com/sw-extract@1.0.0/dist/sw-extract.umd.min.js`
 
 ### Usage with a bundler
-To use keywords-extract with Webpack, Parcel or other bundler
+To use sw-extract with Webpack, Parcel or other bundler
 
 ```js
 import Keywords from 'sw-extract';
@@ -26,7 +26,7 @@ const result = Keywords(text, options).toArray();
 
 ### Usage in Browser directly
 ```html
-<script src="https://unpkg.com/sw-extract@1.0.0/dist/sw-extract.umd.min.js"></script>
+<script src="https://unpkg.com/sw-extract@latest/dist/sw-extract.umd.min.js"></script>
 <body>
   ...
 </body>
