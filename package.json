@@ -1,6 +1,6 @@
 {
     "name": "sw-extract",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Extracting stopwords from a string.",
     "keywords": [
         "stopwords",
@@ -12,7 +12,8 @@
     "module": "dist/sw-extract.esm.min.js",
     "unpkg": "dist/sw-extract.umd.min.js",
     "files": [
-        "dist"
+        "src",
+        "dist/*.js"
     ],
     "scripts": {
         "test": "jest",
@@ -52,5 +53,8 @@
         "rollup": "^2.14.0",
         "rollup-plugin-node-resolve": "^5.2.0",
         "rollup-plugin-terser": "^6.1.0"
+    },
+    "engines": {
+        "node": ">=14.0.0"
     }
 }
