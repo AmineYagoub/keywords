@@ -103,23 +103,13 @@ applyOptions (target) {
 * @returns Array
 */
 getDuplicateOnly (target) {
-  const duplicate = []
-  for (const el of target) {
-    let first = null
-    if (!duplicate.includes(el)) {
-      first = el
-      let idx = target.indexOf(el)
-      while (idx !== -1) {
-        if (idx !== target.indexOf(el)) {
-          duplicate.push(el)
-        }
-        idx = target.indexOf(el, idx + 1)
-      }
+  const missed = new Set()
+  const result = target.filter((element, i, a) => {
+    if (i !== a.indexOf(element)) {
+      missed.add(element)
+      return true
     }
-    if (duplicate.includes(first)) {
-      duplicate.push(first)
-    }
-  }
-  return duplicate
+  })
+  return [...result, ...missed].sort()
 }
 }
