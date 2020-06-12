@@ -26,14 +26,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/AmineYagoub/keywords-extract.git"
+        "url": "https://github.com/AmineYagoub/sw-extract.git"
     },
     "author": "@_AmineYagoub",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/AmineYagoub/keywords-extract/issues"
+        "url": "https://github.com/AmineYagoub/sw-extract/issues"
     },
-    "homepage": "https://github.com/AmineYagoub/keywords-extract#readme",
+    "homepage": "https://github.com/AmineYagoub/sw-extract#readme",
     "devDependencies": {
         "@babel/core": "^7.10.2",
         "@babel/plugin-proposal-class-properties": "^7.10.1",
