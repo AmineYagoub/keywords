@@ -1,6 +1,9 @@
 # sw-extract 
-[![Build Status](https://travis-ci.com/AmineYagoub/keywords-extract.svg?branch=master)](https://travis-ci.com/AmineYagoub/keywords-extract)
-[![Coverage Status](https://coveralls.io/repos/github/AmineYagoub/keywords-extract/badge.svg?branch=master)](https://coveralls.io/github/AmineYagoub/keywords-extract?branch=master)
+[![NPM](https://nodei.co/npm/sw-extract.png)](https://nodei.co/npm/sw-extract/)
+
+[![Build Status](https://travis-ci.com/AmineYagoub/sw-extract.svg?branch=master)](https://travis-ci.com/AmineYagoub/sw-extract)
+[![Coverage Status](https://coveralls.io/repos/github/AmineYagoub/sw-extract/badge.svg?branch=master)](https://coveralls.io/github/AmineYagoub/sw-extract?branch=master)
+![node-current](https://img.shields.io/node/v/sw-extract?style=plastic)
 > A simple javascript stopwords extractor with 0 dependencies. [demo](https://amineyagoub.github.io/sw-extract-demo/)
 # Installation
 
