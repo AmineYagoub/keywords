@@ -1,7 +1,7 @@
 import keywords from './../index.js'
 import assert from 'assert'
 
-/*describe('Keywords', function () {
+describe('Keywords', function () {
   const langParams = ['es', 'de', '', null, 0, false]
   langParams.forEach(param => {
     it('should thrown error when language is not supported', function () {
@@ -84,7 +84,7 @@ import assert from 'assert'
     it("should return unique and non unique array of 'keywords'", () => {
       assert.deepStrictEqual(keywords(str2, opt).toArray(), expected)
     })
-  })*/
+  })
 
   const str3 = 'With Meta Tags you can edit Meta and experiment with your Meta Tags then preview how your webpage will look on Google, Google, Google and more!'
   const duplicateStrArgs = [
@@ -109,9 +109,9 @@ import assert from 'assert'
     it("should return only duplicated 'keywords'", () => {
       assert.deepStrictEqual(keywords(str3, opt).toArray(), expected)
     })
-  // })
+  })
 
-  /*const str4 = 'With Meta Tags And since 2020 you can edit 3 Meta and experiment with it!'
+  const str4 = 'With Meta Tags And since 2020 you can edit 3 Meta and experiment with it!'
   const digitsArgs = [
     {
       unique: true,
@@ -150,5 +150,5 @@ import assert from 'assert'
     it("should return an array of 'keywords' with specified length", () => {
       assert.deepStrictEqual(keywords(str1, opt).toArray(), expected)
     })
-  })*/
+  })
 })
