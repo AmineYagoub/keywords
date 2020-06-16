@@ -88,7 +88,8 @@ applyOptions (target) {
   if (!digits) {
     target = target.filter(val => isNaN(val))
   }
-  target = target.filter(val => !!val)
+  // word length must be 3 and above
+  target = target.filter(val => !!val && val.length >= 3)
   if (length && target.length > Number(length)) {
     target.length = Number(length)
   }
