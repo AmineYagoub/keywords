@@ -151,4 +151,25 @@ describe('Keywords', function () {
       assert.deepStrictEqual(keywords(str1, opt).toArray(), expected)
     })
   })
+
+  const wordLengthArgs = [
+    {
+      wordLength: 3,
+      expected: ['Meta', 'Tags', 'edit', 'experiment', 'content', 'preview', 'webpage', 'Google', 'Facebook', 'Twitter']
+    },
+    {
+      wordLength: 5,
+      expected: ['experiment', 'content', 'preview', 'webpage', 'Google', 'Facebook', 'Twitter']
+    },
+    {
+      wordLength: 8,
+      expected: ['experiment', 'Facebook']
+    }
+  ]
+  wordLengthArgs.forEach(({ wordLength, expected }) => {
+    const opt = { lang: 'en', wordLength }
+    it("should return only 'keywords' with specified length", () => {
+      assert.deepStrictEqual(keywords(str1, opt).toArray(), expected)
+    })
+  })
 })
