@@ -43,7 +43,8 @@ const result = Keywords(text, options).toArray();
 ```javascript
 {
     lang: 'en',          // Use english stopwords list (available languages: ar, en, fr)
-    length: null,        // Set the length of the returned result (if null return all result)
+    length: null,        // Set the length of the returned result (default return all result)
+    wordLength: 3,       // Set the length of the returned words (default is 3 chars)
     unique: true,        // Removes the duplicate keywords if set to true
     digits: false,       // Includes all digits if set to true
     toLower: false,      // Lower-cased all extracted keywords if set to true

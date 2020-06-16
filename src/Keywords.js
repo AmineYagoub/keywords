@@ -18,6 +18,7 @@ constructor (str, stopWords, options = {}) {
     ...{
       lang: 'en',
       length: null,
+      wordLength: 3,
       unique: true,
       digits: false,
       toLower: false,
@@ -75,7 +76,7 @@ stripStopWords (target) {
 * @returns Array
 */
 applyOptions (target) {
-  const { toLower, unique, onlyDuplicate, digits, length } = this.#options
+  const { toLower, unique, onlyDuplicate, digits, length, wordLength } = this.#options
   if (toLower) {
     target = target.map(val => val.toLocaleLowerCase())
   }
@@ -88,8 +89,7 @@ applyOptions (target) {
   if (!digits) {
     target = target.filter(val => isNaN(val))
   }
-  // word length must be 3 and above
-  target = target.filter(val => !!val && val.length >= 3)
+  target = target.filter(val => (isNaN(val) && val.length >= wordLength) || (!isNaN(val) && !!val))
   if (length && target.length > Number(length)) {
     target.length = Number(length)
   }
